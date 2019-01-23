@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+ <record id="analytic_dimension_type" model="account.analytic.dimension">
+      <field name="name">Type</field>
+      <field name="code">type</field>
+  </record>
+
+  <record id="analytic_dimension_state" model="account.analytic.dimension">
+      <field name="name">Estado</field>
+      <field name="code">state</field>
+  </record>
+
+  <record id="analytic_dimension_city" model="account.analytic.dimension">
+      <field name="name">Ciudad</field>
+      <field name="code">city</field>
+  </record>
+
+  <record id="analytic_dimension_residential" model="account.analytic.dimension">
+      <field name="name">Fraccionamiento</field>
+      <field name="code">residential</field>
+  </record>
+
+  <record id="analytic_dimension_stage" model="account.analytic.dimension">
+      <field name="name">Etapa</field>
+      <field name="code">stage</field>
+  </record>
+
+  <record id="analytic_dimension_lot" model="account.analytic.dimension">
+      <field name="name">Lote</field>
+      <field name="code">lot</field>
+  </record>
+
+  <record id="analytic_dimension_contract" model="account.analytic.dimension">
+      <field name="name">Contrato</field>
+      <field name="code">contract</field>
+  </record>
+
+  <record id="analytic_dimension_basecc" model="account.analytic.dimension">
+      <field name="name">Centro Costo Base</field>
+      <field name="code">basecc</field>
+  </record>
+
+  <record id="analytic_dimension_contractlot" model="account.analytic.dimension">
+      <field name="name">Lote contrato</field>
+      <field name="code">contractlot</field>
+  </record>
+
+  <record id="analytic_dimension_adquisitionpackage" model="account.analytic.dimension">
+      <field name="name">Paquete vivienda usada</field>
+      <field name="code">adquisitionpackage</field>
+  </record>
+
+  <record id="analytic_dimension_realestate" model="account.analytic.dimension">
+      <field name="name">Vivienda usada</field>
+      <field name="code">realestate</field>
+  </record>
+
+  <record id="analytic_dimension_type" model="account.analytic.dimension">
+      <field name="name">Type</field>
+      <field name="code">type</field>
+  </record>
+
+  <record id="analytic_dimension_concept" model="account.analytic.dimension">
+      <field name="name">Concept</field>
+      <field name="code">concept</field>
+  </record>
+
+  <record id="analytic_tag_type_a" model="account.analytic.tag">
+      <field name="name">Type A</field>
+      <field name="analytic_dimension_id" ref="analytic_tag_dimension.analytic_dimension_type"/>
+  </record>
+  <record id="analytic_tag_type_b" model="account.analytic.tag">
+      <field name="name">Type B</field>
+      <field name="analytic_dimension_id" ref="analytic_tag_dimension.analytic_dimension_type"/>
+  </record>
+
+  <record id="analytic_tag_concept_a" model="account.analytic.tag">
+      <field name="name">Concept A</field>
+      <field name="analytic_dimension_id" ref="analytic_tag_dimension.analytic_dimension_concept"/>
+  </record>
+  <record id="analytic_tag_concept_b" model="account.analytic.tag">
+      <field name="name">Concept B</field>
+      <field name="analytic_dimension_id" ref="analytic_tag_dimension.analytic_dimension_concept"/>
+  </record>
+
+</odoo>
